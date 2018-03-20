@@ -83,3 +83,8 @@ INSTALL(TARGETS ${LIBRARY_NAME}
 SET(NEW_ENTITY_CLASS "Event" "CompareDouble" "RosQueuedSubscribe")
 
 DYNAMIC_GRAPH_HPP_PYTHON_MODULE("sot" ${LIBRARY_NAME} wrap)
+
+INSTALL(
+  FILES ${PROJECT_SOURCE_DIR}/src/dynamic_graph_hpp/__init__.py
+  DESTINATION ${PYTHON_SITELIB}/dynamic_graph_hpp
+  )
